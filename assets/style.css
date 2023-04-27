@@ -9,6 +9,23 @@
   border-radius: 10px;
 }
 
+.formulario_usuarios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #FFFFFF 0%, #D8D8D8 100%);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  height: 100vh;
+  width: 100vw;
+  border: 2px solid #5EAE8F;
+  border-radius: 10px;
+  padding: 20px;
+  
+}
+.formulario_usuarios h3{
+  color: #5EAE8F;
+}
+
 .logo {
     max-width: 100px; /* Establece un ancho máximo para la imagen */
     height: auto; /* Mantiene la proporción de aspecto de la imagen */
