@@ -13,7 +13,7 @@
 <body>
     <nav id ="fondo-menu" class="navbar navbar-expand-lg ">
         <div class="container-fluid ">
-          <a class="navbar-brand" href="#">Adopciones</a>
+          <img src="../assets/images/logo_company.PNG" alt="Logo de Adopciones"  class="logo">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -36,10 +36,18 @@
           <!--Menú del usuario-->
           <div class="user-container" id="user-menu">
             <img src="../assets/images/foto-user.jpg" alt="Foto del usuario" id="user-img">
-            <div class="user-dropdown">
+            <div class="user-dropdown" id="user-menu">
               <ul>
                 <li><a href="#">Mi perfil</a></li>
                 <li><a href="#">Configuración</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle">Más opciones</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Opción 1</a></li>
+                    <li><a href="#">Opción 2</a></li>
+                    <li><a href="#">Opción 3</a></li>
+                  </ul>
+                </li>
                 <li><a href="#">Cerrar sesión</a></li>
               </ul>
             </div>

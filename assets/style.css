@@ -1,5 +1,5 @@
 #fondo-menu{
-    background-color: rgb(127, 249, 255);
+    background-color: #5EAE8F;
 }
 
 
@@ -8,6 +8,12 @@
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
+
+.logo {
+    max-width: 100px; /* Establece un ancho máximo para la imagen */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+  }
+  
 
 .user-container {
     display: flex;
@@ -56,4 +62,6 @@
   .user-container:hover .user-dropdown {
     display: block;
   }
+  
+
   
