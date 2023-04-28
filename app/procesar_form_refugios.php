@@ -3,10 +3,11 @@ include 'conexion.php';
 
 // Procesar datos del formulario
 $nif = $_POST['nif'];
-$nom_refugio = $_POST['nom_refugio'];
-$direccion = $_POST['direccion'];
-$telefono = $_POST['telefono'];
+$nombre = $_POST['nom_refugio'];
 $email = $_POST['email'];
+$direccion = $_POST['direccion'];
+$contrasena = $_POST['contrasena'];
+$telefono = $_POST['telefono'];
 
 
 // Consulta SQL para insertar datos en la tabla "usuario"
