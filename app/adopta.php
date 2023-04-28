@@ -3,15 +3,10 @@ include 'index.html';
 
 echo '<h1>estamos en adopta.php</h1>'
 
-
-
-
-
-
 ?>
 
 
-<form>
+<form action="procesar_form_adopta.php" method="POST">
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
