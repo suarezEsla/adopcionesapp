@@ -3,15 +3,16 @@ include 'conexion.php';
 
 // Procesar datos del formulario
 $nif = $_POST['nif'];
-$nombre = $_POST['nom_refugio'];
-$email = $_POST['email'];
+$nom_refugio= $_POST['nom_refugio'];
 $direccion = $_POST['direccion'];
-$contrasena = $_POST['contrasena'];
 $telefono = $_POST['telefono'];
+$email = $_POST['email'];
+$contrasena = $_POST['contrasena'];
+
 
 
 // Consulta SQL para insertar datos en la tabla "usuario"
-$sql = "INSERT INTO refugio (nif, nom_refugio, direccion, telefono, email) VALUES (:nif, :nom_refugio, :direccion, :telefono, :email)";
+$sql = "INSERT INTO refugio (nif, nom_refugio, direccion, telefono, email,contrasena) VALUES (:nif, :nom_refugio, :direccion, :telefono, :email, :contrasena)";
 
 // Preparar la consulta SQL
 $stmt = $pdo->prepare($sql);
@@ -22,6 +23,7 @@ $stmt->bindParam(':nom_refugio', $nom_refugio);
 $stmt->bindParam(':direccion', $direccion);
 $stmt->bindParam(':telefono', $telefono);
 $stmt->bindParam(':email', $email);
+$stmt->bindParam(':contrasena', $contrasena);
 
 
 // Ejecutar la consulta SQL

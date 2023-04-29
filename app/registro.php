@@ -53,13 +53,13 @@ include 'Index.html';
     </form>
 
     <!-- Formulario para refugios -->
-    <form id="refugioForm" style="display:none;">
+    <form id="refugioForm" style="display:none;" action="procesar_form_refugios.php" method="POST">
       <!-- elementos del formulario para refugios -->
       <h3>Registro de refugio</h3>
 
       <div class="form-group">
-        <label for="nombre">Nombre Refugio</label>
-        <input type="nombre" name="nombre" class="form-control" id="nombre" placeholder="Introduce el nombre del refugio">
+        <label for="nom_refugio">Nombre Refugio</label>
+        <input type="nom_refugio" name="nom_refugio" class="form-control" id="nom_refugio" placeholder="Introduce el nombre del refugio">
       </div>
       <div class="form-group">
         <label for="email">Email address</label>
