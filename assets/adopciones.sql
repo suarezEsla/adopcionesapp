@@ -1,4 +1,5 @@
 
+DROP TABLE IF EXISTS refugio;
 CREATE table refugio
 (
 nif varchar(9) PRIMARY KEY,
@@ -7,7 +8,8 @@ nom_refugio varchar(200) NOT NULL,
 direccion varchar(200) NOT NULL,
 telefono varchar(9) NOT NULL,       
 CHECK(LENGTH(telefono)=9),
-email varchar(100) NOT NULL
+email varchar(100) NOT NULL,
+contrasena varchar(15) NOT NULL
 );
 
 DROP TABLE IF EXISTS animal;
