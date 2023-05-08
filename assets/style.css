@@ -13,6 +13,8 @@
   border-radius: 10px;
   
 }
+
+
 .logo {
   max-width: 100px; /* Establece un ancho máximo para la imagen */
   height: auto; /* Mantiene la proporción de aspecto de la imagen */
@@ -68,6 +70,15 @@
  /*Submenu mascotas*/
  .submenu-mascotas{
   margin-bottom: 15px;
+  font-size: larger;
+  
+ }
+ /* .submenu-mascotas a{
+  color: #00afa1;
+ } */
+
+ #refugioSwitch, #usuarioSwitch{
+  background-color: #d97bb2;
  }
 
 /*Barra de búsqueda*/
@@ -157,6 +168,8 @@ nav.menu-mascotas {
   border-bottom: 1px solid #ddd;
   padding: 10px 0;
 }
+
+
 
 
 

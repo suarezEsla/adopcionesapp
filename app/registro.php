@@ -4,21 +4,21 @@ include 'Index.html';
 
 <div class='menus-contacto'>
   <div>
-    <h3>¡Bienvenido/a!</h3>
-    <div class="form-check form-switch">
-      <input class="form-check-input" type="checkbox" id="usuarioSwitch" name="tipoUsuario" value="usuario" checked>
-      <label class="form-check-label" for="usuarioSwitch">Usuario</label>
+    <h3 >¡Bienvenido/a!</h3>
+    <div class="form-check form-switch" style="color: #00afa1">
+      <input class="form-check-input" type="checkbox" id="usuarioSwitch" name="tipoUsuario" value="usuario" checked >
+      <label class="form-check-label" for="usuarioSwitch">Quiero adoptar</label>
     </div>
 
-    <div class="form-check form-switch">
-      <input class="form-check-input" type="checkbox" id="refugioSwitch" name="tipoUsuario" value="refugio">
-      <label class="form-check-label" for="refugioSwitch">Refugio</label>
+    <div class="form-check form-switch" style="color: #00afa1">
+      <input class="form-check-input" type="checkbox" id="refugioSwitch" name="tipoUsuario" value="refugio" >
+      <label class="form-check-label" for="refugioSwitch">Soy un refugio o asociación</label>
     </div>
     <!-- Formulario para usuarios -->
     <form id="usuarioForm" style="display:none;" action="procesar_form_usuario.php" method="POST">
       <!-- elementos del formulario para usuarios -->
 
-      <h3>Registro de usuarios</h3>
+      <h3 >Registro de usuarios</h3>
       <div class="form-group">
         <label for="email">Email address</label>
         <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
@@ -55,7 +55,7 @@ include 'Index.html';
     <!-- Formulario para refugios -->
     <form id="refugioForm" style="display:none;" action="procesar_form_refugios.php" method="POST">
       <!-- elementos del formulario para refugios -->
-      <h3>Registro de refugio</h3>
+      <h3 >Registro de refugios</h3>
 
       <div class="form-group">
         <label for="nom_refugio">Nombre Refugio</label>

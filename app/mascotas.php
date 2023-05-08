@@ -1,9 +1,12 @@
 <?php
 include 'index.html';
 ?>
+
 <!--Submenu mascotas.php-->
-<div class="container-fluid ">
+<body class="bodyform">
+<div class="container-fluid " >
 <nav class='submenu-mascotas'>
+
   <ul>
     <li><a href="gatos.php">Gatos</a></li>
     <li><a href="perros.php">Perros</a></li>
@@ -11,7 +14,14 @@ include 'index.html';
     <li><a href="otros-animales.php">Otros</a></li>
   </ul>
 </nav>
+
+
+
+
 </div>
+</body>
+
+
 
 
 
