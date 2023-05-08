@@ -8,12 +8,16 @@ echo '</div>';
 
 <div class="container-fluid ">
   <div class='menus-contacto'>
-<form action="procesar_form_adopta.php" method="POST" >
+<form action="procesar_form_adopta.php" id="formulario-adopta" method="POST" >
 
   <div class="form-group">
     <label for="email"></label>
     <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Escribe tu email">
     <small id="emailHelp" class="form-text text-muted">No te preocupes, no compartiremos tu e-mail con terceros.</small>
+  </div>
+  <div class="form-group">
+    <label for="telefono"></label>
+    <input type="telefono" class="form-control" name="telefono" id="telefono" placeholder="Teléfono">
   </div>
   <div class="form-group">
     <label for="mensaje"></label>
@@ -22,11 +26,48 @@ echo '</div>';
   <div>
   &nbsp
   </div>
-  <button type="submit" class="btn btn-primary">Enviar</button>
-</div>
-
-</div>
-
-
-
   
+  <button type="submit" class="btn btn-primary">Enviar</button>
+
+</form>
+
+
+<!--Mostrar mensaje de exito cuando ha sido enviado correctamente-->
+<div id="mensaje_exito" style="display:none">
+    
+      <p>Mensaje recibido. Muy pronto nos pondremos en contacto contigo!.</p>
+ 
+</div>
+
+
+</div>
+
+
+
+
+<script>
+  document.getElementById("formulario-adopta").addEventListener("submit", function(event) {
+    event.preventDefault();
+    var form_data = new FormData(event.target);
+
+    fetch(event.target.action, {
+      method: 'POST',
+      body: form_data
+    })
+    .then(response => {
+      if (response.ok) {
+        document.getElementById("formulario-adopta").style.display = "none";
+        document.getElementById("mensaje_exito").style.display = "block";
+        setTimeout(function() {
+          document.getElementById("formulario-adopta").style.display = "block";
+          document.getElementById("mensaje_exito").style.display = "none";
+        }, 3000);
+      } else {
+        throw new Error('Error al enviar el formulario');
+      }
+    })
+    .catch(error => console.error(error));
+  });
+</script>
+
+
