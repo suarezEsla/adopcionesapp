@@ -65,7 +65,10 @@
 .user-container:hover .user-dropdown {
   display: block;
 }
-
+ /*Submenu mascotas*/
+ .submenu-mascotas{
+  margin-bottom: 15px;
+ }
 
 /*Barra de búsqueda*/
 .search {

@@ -3,7 +3,7 @@ include 'index.html';
 ?>
 <!--Submenu mascotas.php-->
 <div class="container-fluid ">
-<nav>
+<nav class='submenu-mascotas'>
   <ul>
     <li><a href="gatos.php">Gatos</a></li>
     <li><a href="perros.php">Perros</a></li>

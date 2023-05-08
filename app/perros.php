@@ -1,7 +1,7 @@
 <?php
 include 'mascotas.php';
 ?>
-<h1>Perros</h1>
+
 <section id="mascotas">
 	<div class="container">
 		<div class="row">

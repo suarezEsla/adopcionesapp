@@ -4,11 +4,6 @@ include 'mascotas.php';
 ?>
 
 
-
-
-
-
-<h1>GATOS</h1>
 <section id="mascotas">
 	<div class="container">
 		<div class="row">
