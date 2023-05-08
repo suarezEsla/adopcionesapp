@@ -4,10 +4,14 @@
     background-color: #8970d2;
     
 }
+.navbar a{
+  color: #e9e2e2;
+}
 #fondo-menu.navbar{
     margin: 10px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
+  
 }
 .logo {
   max-width: 100px; /* Establece un ancho máximo para la imagen */
@@ -160,7 +164,7 @@ a {
 }
 
 a:hover {
-  background-color: #333;
+  background-color: #fb9ee7;
   color: #fff;
 }
 
