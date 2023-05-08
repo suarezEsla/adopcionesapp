@@ -34,17 +34,19 @@ echo '</div>';
 
 <!--Mostrar mensaje de exito cuando ha sido enviado correctamente-->
 <div id="mensaje_exito" style="display:none">
-    
-      <p>Mensaje recibido. Muy pronto nos pondremos en contacto contigo!.</p>
- 
+      <p>Mensaje recibido. Muy pronto nos pondremos en contacto contigo!</p>
+</div>
+</div>
+
+<!--Mensaje de error-->
+<div id="mensaje_error" style="display:none">
+      <p>Ha habido un error al enviar el mensaje. Inténtalo de nuevo.</p>
+</div>
 </div>
 
 
-</div>
 
-
-
-
+<!--Procesar mensaje de éxito o error-->
 <script>
   document.getElementById("formulario-adopta").addEventListener("submit", function(event) {
     event.preventDefault();
@@ -63,7 +65,13 @@ echo '</div>';
           document.getElementById("mensaje_exito").style.display = "none";
         }, 3000);
       } else {
-        throw new Error('Error al enviar el formulario');
+        //throw new Error('Error al enviar el formulario');
+        document.getElementById("formulario-adopta").style.display = "none";
+        document.getElementById("mensaje_error").style.display = "block";
+        setTimeout(function() {
+          document.getElementById("formulario-adopta").style.display = "block";
+          document.getElementById("mensaje_error").style.display = "none";
+        }, 3000);
       }
     })
     .catch(error => console.error(error));

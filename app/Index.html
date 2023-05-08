@@ -13,6 +13,7 @@
     crossorigin="anonymous"></script>
   <script src="./js/menu-usuario.js"></script>
   <script src="./js/carrusel-animales.js"></script>
+  
   <!--<script src="./js/registro.js"></script>-->
   <title>Pagina principal Adopciones</title>
 </head>
@@ -54,13 +55,18 @@
         </div>
       </div>
       <!--Barra de búsqueda-->
-      <div class="row ms-auto me-2">
+       <div class="row ms-auto me-2">
         <form class="form-inline">
           <input class='search' class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" id="boton-busqueda" type="submit">Search</button>
 
         </form>
-      </div>
+      </div> 
+
+     
+
+
+
 
       <!--Menú del usuario-->
       <div class="user-container" id="user-menu">
@@ -87,6 +93,14 @@
 </header>
 <body>
 
+
+
+
+
+
+
+  <!--contenido solo index-->
+<div id="contenido-index">
 <div id="contenido">
 
   <div class="jumbotron jumbotron-fluid">
@@ -281,9 +295,18 @@
         </div>
         </div>
         </div>
+      </div><!--Fin contenido index-->
 
 
+       <!-- <script>
+        if (window.location.pathname === "index.html") {
+            document.getElementById("contenido-index").style.display = "block";
+        } else {
+            document.getElementById("contenido-index").style.display = "none";
+        }
+    </script>  -->
 
 </body>
+
 
 </html>
