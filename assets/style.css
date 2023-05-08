@@ -122,6 +122,12 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+button.btn-primary {
+  background-color: #fb9ee7;
+  border-color: #fb9ee7;
+  box-shadow: 2px 2px 5px #fb9ee7;
+}
+
 
 /*Tarjetas animales*/
 .card {
@@ -142,6 +148,8 @@ nav.menu-mascotas {
   border-bottom: 1px solid #ddd;
   padding: 10px 0;
 }
+
+
 
 ul {
   list-style: none;
@@ -168,7 +176,17 @@ a:hover {
   color: #fff;
 }
 
-
+/*Adopciones*/
+.menus-contacto {
+  max-width: 500px;
+  margin: 0 auto;
+  border: 2px solid #fb9ee7;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 
 

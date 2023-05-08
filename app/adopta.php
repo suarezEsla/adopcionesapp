@@ -1,27 +1,31 @@
 <?php
 include 'index.html';
 
-echo '<h1>estamos en adopta.php</h1>'
-
+echo '<div style="text-align: center; margin-top: 50px;">';
+echo '<h4> Si estás interesado en ponerte en contacto con algún refugio como adoptante, rellena el siguiente formulario y nosotros haremos todo el trabajo!</h4>';
+echo '</div>';
 ?>
 
+<div class="container-fluid ">
+  <div class='menus-contacto'>
+<form action="procesar_form_adopta.php" method="POST" >
 
-<form action="procesar_form_adopta.php" method="POST">
   <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    <label for="exampleInputEmail1"></label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escribe tu email">
+    <small id="emailHelp" class="form-text text-muted">No te preocupes, no compartiremos tu e-mail con terceros.</small>
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    <label for="exampleFormControlTextarea1"></label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Déjanos un mensaje, y nos pondremos en contacto contigo lo antes posible</textarea>
   </div>
-  <div class="form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  <div>
+  &nbsp
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary">Enviar</button>
+</div>
 
+</div>
 
 
 

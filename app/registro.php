@@ -2,7 +2,7 @@
 include 'Index.html';
 ?>
 
-<div class='formulario_usuarios'>
+<div class='menus-contacto'>
   <div>
     <h3>¡Bienvenido/a!</h3>
     <div class="form-check form-switch">
@@ -85,7 +85,7 @@ include 'Index.html';
         <input type="password" name="contrasena" class="form-control" id="contrasena" placeholder="Introduce la contraseña" required><br>
       </div>
 
-      <button type="submit" value="Registrarse">Submit</button>
+      <button type="submit" class='btn btn-primary' value="Registrarse">Submit</button>
 
     </form>
   </div>

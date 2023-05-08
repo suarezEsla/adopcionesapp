@@ -9,10 +9,10 @@ include 'mascotas.php';
 			<!-- Tarjeta de animal 1 -->
 			<div class="col-md-4 mb-4">
 				<div class="card">
-					<img src="../assets/mascotas/perros/Akira.avif" class="card-img-top" alt="Akira">
+					<img src="../assets/mascotas/hurones/Conchi.avif" class="card-img-top" alt="Conchi">
 					<div class="card-body">
-						<h5 class="card-title">Akira</h5>
-						<p class="card-text">Edad: 2 años</p>
+						<h5 class="card-title">Conchi</h5>
+						<p class="card-text">Edad: 5 meses</p>
 						<a href="#" class="btn btn-primary">Adóptame!</a>
 					</div>
 				</div>
@@ -21,72 +21,13 @@ include 'mascotas.php';
 			<!-- Tarjeta de animal 2 -->
 			<div class="col-md-4 mb-4">
 				<div class="card">
-					<img src="../assets/mascotas/perros/Clara.avif" class="card-img-top" alt="Clara">
+					<img src="../assets/mascotas/hurones/Nikolau.avif" class="card-img-top" alt="Nikolau">
 					<div class="card-body">
-						<h5 class="card-title">Clara</h5>
+						<h5 class="card-title">Nikolau</h5>
 						<p class="card-text">Edad: 1 año</p>
 						<a href="#" class="btn btn-primary">Adóptame!</a>
 					</div>
 				</div>
-			</div>
-
-			<!-- Tarjeta de animal 3 -->
-			<div class="col-md-4 mb-4">
-				<div class="card">
-					<img src="../assets/mascotas/perros/Eminem.avif" class="card-img-top" alt="Eminem">
-					<div class="card-body">
-						<h5 class="card-title">Eminem</h5>
-						<p class="card-text">Edad: 4 años</p>
-						<a href="#" class="btn btn-primary">Adóptame!</a>
-					</div>
-				</div>
-			</div>
-
-			<!-- Tarjeta de animal 4 -->
-			<div class="col-md-4 mb-4">
-				<div class="card">
-					<img src="../assets/mascotas/perros/Chupito.avif" class="card-img-top" alt="Chupito">
-					<div class="card-body">
-						<h5 class="card-title">Chupito</h5>
-						<p class="card-text">Edad: 8 meses</p>
-						<a href="#" class="btn btn-primary">Adóptame!</a>
-					</div>
-				</div>
-			</div>
-
-			<!-- Tarjeta de animal 5 -->
-			<div class="col-md-4 mb-4">
-				<div class="card">
-					<img src="../assets/mascotas/perros/Martina.avif" class="card-img-top" alt="Martina">
-					<div class="card-body">
-						<h5 class="card-title">Martina</h5>
-						<p class="card-text">Edad: 3 años</p>
-						<a href="#" class="btn btn-primary">Adóptame!</a>
-					</div>
-				</div>
-			</div>
-            	<!-- Tarjeta de animal 6 -->
-			<div class="col-md-4 mb-4">
-				<div class="card">
-					<img src="../assets/mascotas/perros/Miguelito.avif" class="card-img-top" alt="Miguelito">
-					<div class="card-body">
-						<h5 class="card-title">Miguelito</h5>
-						<p class="card-text">Edad: 4 años</p>
-						<a href="#" class="btn btn-primary">Adóptame!</a>
-					</div>
-				</div>
-			</div>
-            <!-- Tarjeta de animal 7 -->
-			<div class="col-md-4 mb-4">
-				<div class="card">
-					<img src="../assets/mascotas/perros/Syberia.avif" class="card-img-top" alt="Syberia">
-					<div class="card-body">
-						<h5 class="card-title">Syberia</h5>
-						<p class="card-text">Edad: 1 año</p>
-						<a href="#" class="btn btn-primary">Adóptame!</a>
-					</div>
-				</div>
-			</div>
-            
+			</div> 
        </div>
     </div>

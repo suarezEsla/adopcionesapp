@@ -1,13 +1,20 @@
-<?php
+<?php 
 include 'mascotas.php';
+
 ?>
+
+
+
+
+
+
 <h1>GATOS</h1>
 <section id="mascotas">
 	<div class="container">
 		<div class="row">
 
 			<!-- Tarjeta de animal 1 -->
-			<div class="col-md-4 mb-4">
+			<div class="col-md-4 mb-4 gatocard">
 				<div class="card">
 					<img src="../assets/mascotas/gatos/Croqueta.avif" class="card-img-top" alt="Croqueta">
 					<div class="card-body">
@@ -19,7 +26,7 @@ include 'mascotas.php';
 			</div>
 
 			<!-- Tarjeta de animal 2 -->
-			<div class="col-md-4 mb-4">
+			<div class="col-md-4 mb-4 gatocard">
 				<div class="card">
 					<img src="../assets/mascotas/gatos/Dominika.avif" class="card-img-top" alt="Dominika">
 					<div class="card-body">
@@ -31,7 +38,7 @@ include 'mascotas.php';
 			</div>
 
 			<!-- Tarjeta de animal 3 -->
-			<div class="col-md-4 mb-4">
+			<div class="col-md-4 mb-4 gatocard">
 				<div class="card">
 					<img src="../assets/mascotas/gatos/Dorme.avif" class="card-img-top" alt="Dorme">
 					<div class="card-body">
@@ -43,7 +50,7 @@ include 'mascotas.php';
 			</div>
 
 			<!-- Tarjeta de animal 4 -->
-			<div class="col-md-4 mb-4">
+			<div class="col-md-4 mb-4 gatocard">
 				<div class="card">
 					<img src="../assets/mascotas/gatos/Fireball.avif" class="card-img-top" alt="Fireball">
 					<div class="card-body">
@@ -55,7 +62,7 @@ include 'mascotas.php';
 			</div>
 
 			<!-- Tarjeta de animal 5 -->
-			<div class="col-md-4 mb-4">
+			<div class="col-md-4 mb-4 gatocard">
 				<div class="card">
 					<img src="../assets/mascotas/gatos/Jagger.avif" class="card-img-top" alt="Jagger">
 					<div class="card-body">
@@ -66,7 +73,7 @@ include 'mascotas.php';
 				</div>
 			</div>
             	<!-- Tarjeta de animal 6 -->
-			<div class="col-md-4 mb-4">
+			<div class="col-md-4 mb-4 gatocard">
 				<div class="card">
 					<img src="../assets/mascotas/gatos/Marga.avif" class="card-img-top" alt="Marga">
 					<div class="card-body">
@@ -77,7 +84,7 @@ include 'mascotas.php';
 				</div>
 			</div>
             <!-- Tarjeta de animal 7 -->
-			<div class="col-md-4 mb-4">
+			<div class="col-md-4 mb-4 gatocard">
 				<div class="card">
 					<img src="../assets/mascotas/gatos/Mojo.avif" class="card-img-top" alt="Mojo">
 					<div class="card-body">
@@ -88,9 +95,9 @@ include 'mascotas.php';
 				</div>
 			</div>
             <!-- Tarjeta de animal 8 -->
-			<div class="col-md-4 mb-4">
+			<div class="col-md-4 mb-4 gatocard">
 				<div class="card">
-					<img src="../assetsmascotas/gatos/Vento.avif" class="card-img-top" alt="Vento">
+					<img src="../assets/mascotas/gatos/Vento.avif" class="card-img-top" alt="Vento">
 					<div class="card-body">
 						<h5 class="card-title">Vento</h5>
 						<p class="card-text">Edad: 1 año</p>

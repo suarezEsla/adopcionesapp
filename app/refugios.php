@@ -4,6 +4,9 @@ include 'index.html';
 
 <div class='formulario_usuarios'>
   <form action="procesar_form_refugios.php" method="POST">
+    <div class='menus-registro'>
+
+  
   <h3>Registro de refugios</h3>
   <div class="form-group">
     <label for="nif">NIF</label>
@@ -30,4 +33,6 @@ include 'index.html';
   
   <button type="submit" value="Registrarse">Registrar refugio</button>
 </form>
+</div>
+
 </div>
