@@ -9,10 +9,10 @@ include 'mascotas.php';
 			<!-- Tarjeta de animal 1 -->
 			<div class="col-md-4 mb-4">
 				<div class="card">
-					<img src="../assets/mascotas/gatos/Croqueta.avif" class="card-img-top" alt="Croqueta">
+					<img src="../assets/mascotas/perros/Akira.avif" class="card-img-top" alt="Akira">
 					<div class="card-body">
-						<h5 class="card-title">Croqueta</h5>
-						<p class="card-text">Edad: 3 años</p>
+						<h5 class="card-title">Akira</h5>
+						<p class="card-text">Edad: 2 años</p>
 						<a href="#" class="btn btn-primary">Adóptame!</a>
 					</div>
 				</div>
@@ -21,10 +21,10 @@ include 'mascotas.php';
 			<!-- Tarjeta de animal 2 -->
 			<div class="col-md-4 mb-4">
 				<div class="card">
-					<img src="../assets/mascotas/gatos/Dominika.avif" class="card-img-top" alt="Dominika">
+					<img src="../assets/mascotas/perros/Clara.avif" class="card-img-top" alt="Clara">
 					<div class="card-body">
-						<h5 class="card-title">Dominika</h5>
-						<p class="card-text">Edad: 5 años</p>
+						<h5 class="card-title">Clara</h5>
+						<p class="card-text">Edad: 1 año</p>
 						<a href="#" class="btn btn-primary">Adóptame!</a>
 					</div>
 				</div>
@@ -33,9 +33,9 @@ include 'mascotas.php';
 			<!-- Tarjeta de animal 3 -->
 			<div class="col-md-4 mb-4">
 				<div class="card">
-					<img src="../assets/mascotas/gatos/Dorme.avif" class="card-img-top" alt="Dorme">
+					<img src="../assets/mascotas/perros/Eminem.avif" class="card-img-top" alt="Eminem">
 					<div class="card-body">
-						<h5 class="card-title">Dorme</h5>
+						<h5 class="card-title">Eminem</h5>
 						<p class="card-text">Edad: 4 años</p>
 						<a href="#" class="btn btn-primary">Adóptame!</a>
 					</div>
@@ -45,10 +45,10 @@ include 'mascotas.php';
 			<!-- Tarjeta de animal 4 -->
 			<div class="col-md-4 mb-4">
 				<div class="card">
-					<img src="../assets/mascotas/gatos/Fireball.avif" class="card-img-top" alt="Fireball">
+					<img src="../assets/mascotas/perros/Chupito.avif" class="card-img-top" alt="Chupito">
 					<div class="card-body">
-						<h5 class="card-title">Fireball</h5>
-						<p class="card-text">Edad: 6 meses</p>
+						<h5 class="card-title">Chupito</h5>
+						<p class="card-text">Edad: 8 meses</p>
 						<a href="#" class="btn btn-primary">Adóptame!</a>
 					</div>
 				</div>
@@ -57,10 +57,10 @@ include 'mascotas.php';
 			<!-- Tarjeta de animal 5 -->
 			<div class="col-md-4 mb-4">
 				<div class="card">
-					<img src="../assets/mascotas/gatos/Jagger.avif" class="card-img-top" alt="Jagger">
+					<img src="../assets/mascotas/perros/Martina.avif" class="card-img-top" alt="Martina">
 					<div class="card-body">
-						<h5 class="card-title">Jagger</h5>
-						<p class="card-text">Edad: 2 años</p>
+						<h5 class="card-title">Martina</h5>
+						<p class="card-text">Edad: 3 años</p>
 						<a href="#" class="btn btn-primary">Adóptame!</a>
 					</div>
 				</div>
@@ -68,10 +68,10 @@ include 'mascotas.php';
             	<!-- Tarjeta de animal 6 -->
 			<div class="col-md-4 mb-4">
 				<div class="card">
-					<img src="../assets/mascotas/gatos/Marga.avif" class="card-img-top" alt="Marga">
+					<img src="../assets/mascotas/perros/Miguelito.avif" class="card-img-top" alt="Miguelito">
 					<div class="card-body">
-						<h5 class="card-title">Marga</h5>
-						<p class="card-text">Edad: 6 años</p>
+						<h5 class="card-title">Miguelito</h5>
+						<p class="card-text">Edad: 4 años</p>
 						<a href="#" class="btn btn-primary">Adóptame!</a>
 					</div>
 				</div>
@@ -79,10 +79,10 @@ include 'mascotas.php';
             <!-- Tarjeta de animal 7 -->
 			<div class="col-md-4 mb-4">
 				<div class="card">
-					<img src="../assets/mascotas/gatos/Mojo.avif" class="card-img-top" alt="Mojo">
+					<img src="../assets/mascotas/perros/Syberia.avif" class="card-img-top" alt="Syberia">
 					<div class="card-body">
-						<h5 class="card-title">Mojo</h5>
-						<p class="card-text">Edad: 3 años</p>
+						<h5 class="card-title">Syberia</h5>
+						<p class="card-text">Edad: 1 año</p>
 						<a href="#" class="btn btn-primary">Adóptame!</a>
 					</div>
 				</div>
@@ -90,10 +90,10 @@ include 'mascotas.php';
             <!-- Tarjeta de animal 8 -->
 			<div class="col-md-4 mb-4">
 				<div class="card">
-					<img src="../assetsmascotas/gatos/Vento.avif" class="card-img-top" alt="Vento">
+					<img src="../assetsmascotas/perros/Turbo.avif" class="card-img-top" alt="Turbo">
 					<div class="card-body">
-						<h5 class="card-title">Vento</h5>
-						<p class="card-text">Edad: 1 año</p>
+						<h5 class="card-title">Turbo</h5>
+						<p class="card-text">Edad: 2 años</p>
 						<a href="#" class="btn btn-primary">Adóptame!</a>
 					</div>
 				</div>

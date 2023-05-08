@@ -5,7 +5,7 @@ include 'index.html';
 <nav class='menu-mascotas'>
   <ul>
     <li><a href="gatos.php">Gatos</a></li>
-    <li><a href="#">Perros</a></li>
+    <li><a href="perros.php">Perros</a></li>
     <li><a href="#">Hurones</a></li>
     <li><a href="#">Otros</a></li>
   </ul>
