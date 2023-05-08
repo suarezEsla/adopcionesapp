@@ -1,16 +1,123 @@
+/*Menú principal*/
 #fondo-menu{
     background-color: #5EAE8F;
+    
 }
-
-
 #fondo-menu.navbar{
     margin: 10px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
+.logo {
+  max-width: 100px; /* Establece un ancho máximo para la imagen */
+  height: auto; /* Mantiene la proporción de aspecto de la imagen */
+}
+/*Menú desplegable usuario*/
+.user-container {
+  display: flex;
+  align-items: center;
+}
+
+.user-container img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.user-dropdown {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+.user-dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.user-dropdown li {
+  margin: 0;
+  padding: 5px 10px;
+}
+
+.user-dropdown li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.user-dropdown li:hover {
+  background-color: #f5f5f5;
+}
+
+.user-container:hover .user-dropdown {
+  display: block;
+}
+
+
+/*Barra de búsqueda*/
 .search {
     width: 150px; /* ajusta el ancho según sea necesario */
+    
 }
+/*Tarjetas animales*/
+.card {
+  height: 450px;
+}
+
+.card-img-top {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/*Menu mascotas*/
+
+nav.menu-mascotas {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+
+
+
+
+
+/*Formularios*/
 .formulario_usuarios {
   display: flex;
   justify-content: center;
@@ -28,59 +135,8 @@
   color: #5EAE8F;
 }
 
-.logo {
-    max-width: 100px; /* Establece un ancho máximo para la imagen */
-    height: auto; /* Mantiene la proporción de aspecto de la imagen */
-  }
+
   
 
-.user-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .user-container img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-    cursor: pointer;
-  }
-  
-  .user-dropdown {
-    position: absolute;
-    top: 60px;
-    right: 0;
-    z-index: 1;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-    display: none;
-  }
-  
-  .user-dropdown ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .user-dropdown li {
-    margin: 0;
-    padding: 5px 10px;
-  }
-  
-  .user-dropdown li a {
-    text-decoration: none;
-    color: #000;
-  }
-  
-  .user-dropdown li:hover {
-    background-color: #f5f5f5;
-  }
-  
-  .user-container:hover .user-dropdown {
-    display: block;
-  }
-  
 
   
