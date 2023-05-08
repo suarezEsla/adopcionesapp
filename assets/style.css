@@ -128,6 +128,12 @@ button.btn-primary {
   box-shadow: 2px 2px 5px #fb9ee7;
 }
 
+.boton-animales{
+  background-color: #fb9ee7;
+  border-color: #fb9ee7;
+  box-shadow: 2px 2px 5px #fb9ee7;
+}
+
 
 /*Tarjetas animales*/
 .card {

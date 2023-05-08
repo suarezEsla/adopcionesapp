@@ -13,7 +13,7 @@ include 'mascotas.php';
 					<div class="card-body">
 						<h5 class="card-title">Conchi</h5>
 						<p class="card-text">Edad: 5 meses</p>
-						<a href="#" class="btn btn-primary">Adóptame!</a>
+						<a href="#" class="boton-animales">Adóptame!</a>
 					</div>
 				</div>
 			</div>
@@ -25,7 +25,7 @@ include 'mascotas.php';
 					<div class="card-body">
 						<h5 class="card-title">Nikolau</h5>
 						<p class="card-text">Edad: 1 año</p>
-						<a href="#" class="btn btn-primary">Adóptame!</a>
+						<a href="#" class="boton-animales">Adóptame!</a>
 					</div>
 				</div>
 			</div> 

@@ -20,7 +20,7 @@ include 'mascotas.php';
 					<div class="card-body">
 						<h5 class="card-title">Croqueta</h5>
 						<p class="card-text">Edad: 3 años</p>
-						<a href="#" class="btn btn-primary">Adóptame!</a>
+						<a href="#" class="boton-animales">Adóptame!</a>
 					</div>
 				</div>
 			</div>
@@ -32,7 +32,7 @@ include 'mascotas.php';
 					<div class="card-body">
 						<h5 class="card-title">Dominika</h5>
 						<p class="card-text">Edad: 5 años</p>
-						<a href="#" class="btn btn-primary">Adóptame!</a>
+						<a href="#" class='boton-animales'>Adóptame!</a>
 					</div>
 				</div>
 			</div>
@@ -44,7 +44,7 @@ include 'mascotas.php';
 					<div class="card-body">
 						<h5 class="card-title">Dorme</h5>
 						<p class="card-text">Edad: 4 años</p>
-						<a href="#" class="btn btn-primary">Adóptame!</a>
+						<a href="#" class="boton-animales">Adóptame!</a>
 					</div>
 				</div>
 			</div>
@@ -56,7 +56,7 @@ include 'mascotas.php';
 					<div class="card-body">
 						<h5 class="card-title">Fireball</h5>
 						<p class="card-text">Edad: 6 meses</p>
-						<a href="#" class="btn btn-primary">Adóptame!</a>
+						<a href="#" class="boton-animales">Adóptame!</a>
 					</div>
 				</div>
 			</div>
@@ -68,7 +68,7 @@ include 'mascotas.php';
 					<div class="card-body">
 						<h5 class="card-title">Jagger</h5>
 						<p class="card-text">Edad: 2 años</p>
-						<a href="#" class="btn btn-primary">Adóptame!</a>
+						<a href="#" class="boton-animales">Adóptame!</a>
 					</div>
 				</div>
 			</div>
@@ -79,7 +79,7 @@ include 'mascotas.php';
 					<div class="card-body">
 						<h5 class="card-title">Marga</h5>
 						<p class="card-text">Edad: 6 años</p>
-						<a href="#" class="btn btn-primary">Adóptame!</a>
+						<a href="#" class="boton-animales">Adóptame!</a>
 					</div>
 				</div>
 			</div>
@@ -90,7 +90,7 @@ include 'mascotas.php';
 					<div class="card-body">
 						<h5 class="card-title">Mojo</h5>
 						<p class="card-text">Edad: 3 años</p>
-						<a href="#" class="btn btn-primary">Adóptame!</a>
+						<a href="#" class="boton-animales">Adóptame!</a>
 					</div>
 				</div>
 			</div>
@@ -101,7 +101,7 @@ include 'mascotas.php';
 					<div class="card-body">
 						<h5 class="card-title">Vento</h5>
 						<p class="card-text">Edad: 1 año</p>
-						<a href="#" class="btn btn-primary">Adóptame!</a>
+						<a href="#" class="boton-animales">Adóptame!</a>
 					</div>
 				</div>
 			</div>
