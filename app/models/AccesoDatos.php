@@ -1,11 +1,14 @@
 <?php
-
 /*
  * Acceso a datos con BD Usuarios : 
  * Usando la librería PDO *******************
  * Uso el Patrón Singleton :Un único objeto para la clase
  * Constructor privado, y métodos estáticos 
  */
+define('DB_SERVER','localhost');
+define('DB_USER','root');
+define('DB_PASSWD','');
+define('DATABASE','adopciones');
 class AccesoDatos {
     
     private static $modelo = null;
@@ -45,7 +48,8 @@ class AccesoDatos {
     }
 
     
-      
+//Métodos CRUD usuarios     
+    
     // SELECT Devuelvo un usuario o false
     public function getUsu (int $email) {
         $usu = false;
@@ -82,38 +86,37 @@ class AccesoDatos {
 */
 
     //INSERT USUARIO
-    public function insertUsu($usu):bool{
+    public function insertUsu($user):bool{
        
         // El id se define automáticamente por autoincremento.
-        $stmt_crearcli  = $this->dbh->prepare(
+        $stmt_crearuser  = $this->dbh->prepare(
             "INSERT INTO `usuario`( `email`, `nombre`, `apellidos`, `nick`, `contrasena`, `intereses`)".
             "Values(?,?,?,?,?,?)");
-        $stmt_crearcli->bindValue(1,$usu->email);
-        $stmt_crearcli->bindValue(2,$usu->nombre);
-        $stmt_crearcli->bindValue(3,$usu->apellidos);
-        $stmt_crearcli->bindValue(4,$usu->nick);
-        $stmt_crearcli->bindValue(5,$usu->contrasena);
-        $stmt_crearcli->bindValue(6,$usu->intereses);    
-        $stmt_crearcli->execute();
-        $resu = ($stmt_crearcli->rowCount () == 1);
+        $stmt_crearuser->bindValue(1,$user->email);
+        $stmt_crearuser->bindValue(2,$user->nombre);
+        $stmt_crearuser->bindValue(3,$user->apellidos);
+        $stmt_crearuser->bindValue(4,$user->nick);
+        $stmt_crearuser->bindValue(5,$user->contrasena);
+        $stmt_crearuser->bindValue(6,$user->intereses);    
+        $stmt_crearuser->execute();
+        $resu = ($stmt_crearuser->rowCount () == 1);
         return $resu;
     }
 
     //INSERT REFUGIO
     public function insertRefugio($refugio):bool{
        
-        // El id se define automáticamente por autoincremento.
-        $stmt_crearcli  = $this->dbh->prepare(
-            "INSERT INTO `usuario`( `email`, `nombre`, `apellidos`, `nick`, `contrasena`, `intereses`)".
+        $stmt_crearRef  = $this->dbh->prepare(
+            "INSERT INTO `refugio`( `nif`, `nom_refugio`, `direccion`, `telefono`, `email`, `contrasena`)".
             "Values(?,?,?,?,?,?)");
-        $stmt_crearcli->bindValue(1,$refugio->email);
-        $stmt_crearcli->bindValue(2,$refugio->nombre);
-        $stmt_crearcli->bindValue(3,$refugio->apellidos);
-        $stmt_crearcli->bindValue(4,$refugio->nick);
-        $stmt_crearcli->bindValue(5,$refugio->contrasena);
-        $stmt_crearcli->bindValue(6,$refugio->intereses);    
-        $stmt_crearcli->execute();
-        $resu = ($stmt_crearcli->rowCount () == 1);
+        $stmt_crearRef->bindValue(1,$refugio->nif);
+        $stmt_crearRef->bindValue(2,$refugio->nom_refugio);
+        $stmt_crearRef->bindValue(3,$refugio->direccion);
+        $stmt_crearRef->bindValue(4,$refugio->telefono);
+        $stmt_crearRef->bindValue(5,$refugio->email);
+        $stmt_crearRef->bindValue(6,$refugio->contrasena);    
+        $stmt_crearRef->execute();
+        $resu = ($stmt_crearRef->rowCount () == 1);
         return $resu;
     }
    
@@ -137,5 +140,6 @@ class AccesoDatos {
         trigger_error('La clonación no permitida', E_USER_ERROR); 
     }
 
-    
+//Métodos CRUD mascotas    
+//Métodos CRUD refugios  
 }

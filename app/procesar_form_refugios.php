@@ -1,35 +1,29 @@
 <?php
-include 'conexion.php';
+include './models/AccesoDatos.php';
+include './models/Refugio.php';
+include './models/crud/funcionesCrud.php';
+
+//Creo objeto REFUGIO
+$refugio= new Refugio();
 
 // Procesar datos del formulario
-$nif = $_POST['nif'];
-$nom_refugio= $_POST['nom_refugio'];
-$direccion = $_POST['direccion'];
-$telefono = $_POST['telefono'];
-$email = $_POST['email'];
-$contrasena = $_POST['contrasena'];
+$refugio->nif = $_POST['nif'];
+$refugio->nom_refugio= $_POST['nom_refugio'];
+$refugio->direccion = $_POST['direccion'];
+$refugio->telefono = $_POST['telefono'];
+$refugio->email = $_POST['email'];
+$refugio->contrasena = $_POST['contrasena'];
 
+//Inserto los datos en la base de datos
+$insert=insertRefugio($refugio);
 
-
-// Consulta SQL para insertar datos en la tabla "usuario"
-$sql = "INSERT INTO refugio (nif, nom_refugio, direccion, telefono, email,contrasena) VALUES (:nif, :nom_refugio, :direccion, :telefono, :email, :contrasena)";
-
-// Preparar la consulta SQL
-$stmt = $pdo->prepare($sql);
-
-// Vincular los parámetros de la consulta SQL con los valores del formulario
-$stmt->bindParam(':nif', $nif);
-$stmt->bindParam(':nom_refugio', $nom_refugio);
-$stmt->bindParam(':direccion', $direccion);
-$stmt->bindParam(':telefono', $telefono);
-$stmt->bindParam(':email', $email);
-$stmt->bindParam(':contrasena', $contrasena);
-
-
-// Ejecutar la consulta SQL
-if ($stmt->execute()) {
-  echo "Datos insertados correctamente.";
+//Muestro un mensaje dependiendo de si se ha insertado correctamente o no
+if ($insert) {
+  $msj="Datos insertados correctamente.";
+  
 } else {
-  echo "Error al insertar datos: " . $stmt->errorInfo();
+  $msj= "Error al insertar datos: " . $stmt->errorInfo();
 }
+
+include_once("registro.php");
 ?>
