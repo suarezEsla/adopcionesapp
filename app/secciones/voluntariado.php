@@ -1,10 +1,9 @@
-
 <?php
  include '../index.html';
  ?>
  <div id="contenido">
  <div class="voluntariado">
-<div class="row">
+<div class="row" >
   <div class="col-md-6">
     <h3>Requisitos para ser voluntario</h3>
     <ul class="list-unstyled">
