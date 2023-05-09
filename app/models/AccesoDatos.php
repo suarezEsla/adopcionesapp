@@ -145,16 +145,16 @@ class AccesoDatos {
         return $resu;
     }
     // SELECT ANIMAL Devuelvo un animal o false
-    public function getUsu (int $email) {
-        $usu = false;
-        $stmt_usu   = $this->dbh->prepare("select * from usuario where email=:email");
-        $stmt_usu->setFetchMode(PDO::FETCH_CLASS, 'usuario');
-        $stmt_usu->bindParam(':email', $email);
-        if ( $stmt_usu->execute() ){
-             if ( $obj = $stmt_usu->fetch()){
-                $cli= $obj;
+    public function getAnimal (string $microchip) {
+        $animal = false;
+        $stmt_animal   = $this->dbh->prepare("select * from animal where microchip=:microchip");
+        $stmt_animal->setFetchMode(PDO::FETCH_CLASS, 'animal');
+        $stmt_animal->bindParam(':microchip', $microchip);
+        if ( $stmt_animal->execute() ){
+             if ( $obj = $stmt_animal->fetch()){
+                $animal= $obj;
             }
         }
-        return $usu;
+        return $animal;
     }
 }

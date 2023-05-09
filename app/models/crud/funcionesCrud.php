@@ -25,4 +25,12 @@ function insertAnimal($animal):bool{
     
     return $insert;
 }
+
+function getAnimal($microchip):bool{
+    // Creo una nueva conexión e inserto el refugio en la BBDD
+    $midb = AccesoDatos::getModelo();
+    $insert=$midb->getAnimal($microchip);
+    
+    return $insert;
+}
 ?>
