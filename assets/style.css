@@ -251,14 +251,14 @@ width: 100%;
 /*Voluntariado*/
 
 .voluntariado {
-  background-image: url('https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');
+  
   background-size: cover;
   background-position: center;
   color: #333;
 }
 
 .voluntariado h2, .voluntariado h3 {
-  color: #fff;
+  color: #5EAE8F;
 }
 
 .voluntariado p {
@@ -283,14 +283,14 @@ width: 100%;
   position: absolute;
   left: 0;
   top: 0;
-  color: #f5a623;
+  color: #fb9ee7;
   font-size: 30px;
   line-height: 1;
 }
 
 .voluntariado a.btn-primary {
-  background-color: #f5a623;
-  border-color: #f5a623;
+  background-color: #fb9ee7;
+  border-color: #fb9ee7;
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 2px;
