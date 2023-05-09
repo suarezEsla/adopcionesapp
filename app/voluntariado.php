@@ -1,6 +1,7 @@
 <?php
  include 'index.html';
  ?>
+ <div id="contenido">
  <div class="voluntariado">
 <div class="row" >
   <div class="col-md-6">
@@ -24,5 +25,6 @@
     <p>Si estás interesado en ser voluntario en nuestro refugio, por favor completa nuestro formulario de solicitud de voluntariado. Después de enviar tu solicitud, nos pondremos en contacto contigo para programar una sesión de orientación para voluntarios. ¡Gracias por tu interés en ayudar a nuestros animales!</p>
     <a href="#" class="boton-animales">Solicitud de voluntariado</a>
   </div>
+</div>
 </div>
 </div>
