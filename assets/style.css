@@ -248,6 +248,58 @@ width: 100%;
 }
   
 
+/*Voluntariado*/
 
- 
+.voluntariado {
+  background-image: url('https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');
+  background-size: cover;
+  background-position: center;
+  color: #333;
+}
+
+.voluntariado h2, .voluntariado h3 {
+  color: #fff;
+}
+
+.voluntariado p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #777;
+}
+
+.voluntariado ul {
+  font-size: 18px;
+  line-height: 2;
+  color: #555;
+}
+
+.voluntariado ul li {
+  padding-left: 20px;
+  position: relative;
+}
+
+.voluntariado ul li:before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #f5a623;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.voluntariado a.btn-primary {
+  background-color: #f5a623;
+  border-color: #f5a623;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.voluntariado a.btn-primary:hover {
+  background-color: #f39c12;
+  border-color: #f39c12;
+}
+
+
 
