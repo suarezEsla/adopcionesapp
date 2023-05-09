@@ -4,6 +4,7 @@ include 'Index.html';
 
 <div class='menus-contacto'>
   <div>
+    <h2><?=$msj?></h2>
     <h3 >¡Bienvenido/a!</h3>
     <div class="form-check form-switch" style="color: #00afa1">
       <input class="form-check-input" type="checkbox" id="usuarioSwitch" name="tipoUsuario" value="usuario" checked >

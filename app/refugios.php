@@ -1,7 +1,7 @@
 <?php
 include 'index.html';
 ?>
-
+<?php echo " $msj"?>
 <div class='formulario_usuarios'>
   <form action="procesar_form_refugios.php" method="POST">
     <div class='menus-registro'>
