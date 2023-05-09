@@ -3,6 +3,7 @@ include './models/AccesoDatos.php';
 include './models/Refugio.php';
 include './models/crud/funcionesCrud.php';
 
+$msj="";
 //Creo objeto REFUGIO
 $refugio= new Refugio();
 

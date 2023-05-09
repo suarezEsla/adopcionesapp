@@ -47,22 +47,12 @@ class AccesoDatos {
         }
     }
 
-    
-//Métodos CRUD usuarios     
-    
-    // SELECT Devuelvo un usuario o false
-    public function getUsu (int $email) {
-        $usu = false;
-        $stmt_usu   = $this->dbh->prepare("select * from usuario where email=:email");
-        $stmt_usu->setFetchMode(PDO::FETCH_CLASS, 'usuario');
-        $stmt_usu->bindParam(':email', $email);
-        if ( $stmt_usu->execute() ){
-             if ( $obj = $stmt_usu->fetch()){
-                $cli= $obj;
-            }
-        }
-        return $usu;
-    }
+      // Evito que se pueda clonar el objeto. (SINGLETON)
+      public function __clone()
+      { 
+          trigger_error('La clonación no permitida', E_USER_ERROR); 
+      }
+  
 
 
 /*
@@ -119,9 +109,9 @@ class AccesoDatos {
         $resu = ($stmt_crearRef->rowCount () == 1);
         return $resu;
     }
-   
+
     //DELETE 
-    public function borrarCliente(int $id):bool {
+    /*,public function borrarCliente(int $id):bool {
 
 
         $stmt_boruser   = $this->dbh->prepare("delete from Clientes where id =:id");
@@ -131,15 +121,40 @@ class AccesoDatos {
         $resu = ($stmt_boruser->rowCount () == 1);
         return $resu;
         
-    }   
-    
-    
-     // Evito que se pueda clonar el objeto. (SINGLETON)
-    public function __clone()
-    { 
-        trigger_error('La clonación no permitida', E_USER_ERROR); 
-    }
+    }  */
 
-//Métodos CRUD mascotas    
-//Métodos CRUD refugios  
+
+    //INSERT ANIMAL
+    public function insertAnimal($animal): bool
+    {
+        $stmt_crearAnimal  = $this->dbh->prepare(
+            "INSERT INTO `animal`( `microchip`, `nif_refugio`, `especie`, `raza`, `nombre`, `sexo`,`fecha_nac`,`tamano`,`peso`)" .
+            "Values(?,?,?,?,?,?,?,?,?)"
+        );
+        $stmt_crearAnimal->bindValue(1, $animal->microchip);
+        $stmt_crearAnimal->bindValue(2, $animal->nif_refugio);
+        $stmt_crearAnimal->bindValue(3, $animal->especie);
+        $stmt_crearAnimal->bindValue(4, $animal->raza);
+        $stmt_crearAnimal->bindValue(5, $animal->nombre);
+        $stmt_crearAnimal->bindValue(6, $animal->sexo);
+        $stmt_crearAnimal->bindValue(7, $animal->fecha_nac);
+        $stmt_crearAnimal->bindValue(8, $animal->tamano);
+        $stmt_crearAnimal->bindValue(9, $animal->peso);
+        $stmt_crearAnimal->execute();
+        $resu = ($stmt_crearAnimal->rowCount() == 1);
+        return $resu;
+    }
+    // SELECT ANIMAL Devuelvo un animal o false
+    public function getUsu (int $email) {
+        $usu = false;
+        $stmt_usu   = $this->dbh->prepare("select * from usuario where email=:email");
+        $stmt_usu->setFetchMode(PDO::FETCH_CLASS, 'usuario');
+        $stmt_usu->bindParam(':email', $email);
+        if ( $stmt_usu->execute() ){
+             if ( $obj = $stmt_usu->fetch()){
+                $cli= $obj;
+            }
+        }
+        return $usu;
+    }
 }

@@ -18,4 +18,11 @@ function insertUser($user):bool{
 }
 
 //FUNCIONES CRUD ANIMALES
+function insertAnimal($animal):bool{
+    // Creo una nueva conexión e inserto el refugio en la BBDD
+    $midb = AccesoDatos::getModelo();
+    $insert=$midb->insertAnimal($animal);
+    
+    return $insert;
+}
 ?>

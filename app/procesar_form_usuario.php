@@ -3,6 +3,9 @@
 include './models/AccesoDatos.php';
 include './models/Usuario.php';
 include './models/crud/funcionesCrud.php';
+
+$msj="";
+
 //Creo objeto usuario
 $user= new Usuario();
 
